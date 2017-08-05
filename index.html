@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="toast.style.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="toast.script.js"></script>
+    </head>
+    <body>
+        <button onclick="addToast()" >add toast</button>
+        <script>
+            function addToast(){
+                $.Toast("test", "this is a test message.", "success", {
+                    has_icon:true,
+                    has_close_btn:true,
+                    fullscreen:false,
+                    timeout:0,
+                    sticky:false,
+                    has_progress:true,
+                    rtl:false,
+                });
+            }
+        </script>
+    </body>
+</html>
